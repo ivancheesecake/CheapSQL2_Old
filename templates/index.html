@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>CheapSQL: A Prototype Single-User DBMS</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/materialize.min.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}" />
+</head>
+
+<body>
+	
+	<nav id="nav">
+		<div class="nav-wrapper blue darken-3">
+				<ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="/about" target="_blank">About</a></li>
+				</ul>
+
+			</a>
+		</div> 
+	</nav>
+		
+	<div class="row" id ="main">
+		
+		<div id="left" class="col s4 m4 l3 z-depth-2" >
+
+			<div id="logo-container" class="row">
+				
+				<img class="responsive-img" src="{{url_for('static',filename='img/logo.png')}}" />
+
+			</div>
+			  <div id="tables-collection" class="collection">
+			    <a href="#!" class="collection-item waves-effect">Student</a>
+			    <a href="#!" class="collection-item waves-effect"><span data-badge-caption="new rows" class="new badge">4</span>StudentHistory</a>
+			    <a href="#!" class="collection-item waves-effect">Course</a>
+			    <a href="#!" class="collection-item waves-effect">CourseOffering</a>
+			    <a href="#!" class="collection-item waves-effect">StudCourse</a>
+			  </div>
+		</div>
+		<div id="right" class="col s8 m8 l9">
+			
+			<div class="row scroll2" id="right-top">
+				<div class="valign-wrapper center-align">
+					<h3 class="grey-text text-lighten-1 " style="width: 100%;">Run a query or select a table.</h3>
+				</div>
+			</div>
+			
+			<div class="row" id="right-bottom">
+
+			        <div id="query-container" class="input-field col s10" style="height:100%">
+			          <textarea id="query" class="materialize-textarea"></textarea>
+			          <label for="query">Query</label>
+			        </div>
+
+
+			        <div class ="col s2 center-align" style="height:100%; margin-bottom: 0px;">
+			        	<div class="valign-wrapper">
+				        	<button id="run" class="btn waves-effect waves-light blue darken-3" type="submit" name="action">Run Query
+		    <!-- <i class="material-icons right">send</i> -->
+		  					</button> 
+	  					</div>
+
+			        </div>
+
+			</div>	
+
+		</div>
+
+	</div>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery-3.2.1.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/scripts.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/materialize.min.js')}}"></script>
+
+</body>
+	
+</html>

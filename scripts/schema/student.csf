@@ -1,0 +1,7 @@
+#Column name	,	Data type	,	length	,	Mask						,	IsNullable	,	Default Value		,	IsUnique
+STUDNO          ,	STRING		,	10		,	"[0-9]{4}-[0-9]{5}"         ,	FALSE		,	FALSE				,	TRUE
+STUDENTNAME     ,	STRING		,	50		,	*                           ,	FALSE		,	FALSE				,	FALSE
+BIRTHDAY        ,	DATE		,	10		,	"YYYY-MM-DD"  				,	FALSE		,	FALSE				,	FALSE
+DEGREE          ,	STRING		,	50		,	*                           ,	FALSE		,	FALSE				,	FALSE
+MAJOR           ,	STRING		,	50		,	*                           ,	FALSE		,	FALSE				,	FALSE
+UNITSEARNED     ,	INTEGER		,	*		,	*                           ,	TRUE		,	0					,	FALSE

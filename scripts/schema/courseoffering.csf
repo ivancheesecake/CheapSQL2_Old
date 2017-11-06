@@ -1,0 +1,7 @@
+#Column name	,	Data type	,	length	,	Mask		,	IsNullable	,	Default Value	,	IsUnique
+SEMESTER		,	ENUM		,	*		,	SEMESTER	,	TRUE        ,   1ST             ,	FALSE
+ACADYEAR		,	STRING		,	50		,	*			,	FALSE       ,   NULL            ,	FALSE
+CNO				,	STRING		,	50		,	*			,	FALSE       ,   NULL            ,	FALSE
+SECTION			,	STRING		,	50		,	*			,	FALSE       ,   NULL            ,	FALSE
+TIME			,	TIME		,	50		,	TIME24HOURS	,	FALSE       ,   NULL            ,	FALSE
+MAXSTUD			,	INTEGER		,	*		,	*			,	FALSE       ,   NULL            ,	FALSE

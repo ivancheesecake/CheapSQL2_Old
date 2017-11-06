@@ -1,0 +1,7 @@
+#Column name	,	Data type	,	length	,	Mask		,	IsNullable	,	Default Value		,	IsUnique
+CNO				,	STRING		,	50		,	*			,	FALSE		,	NULL                ,	TRUE
+CTITLE			,	STRING		,	50		,	*			,	FALSE		,	NULL                ,	TRUE
+CDESC			,	STRING		,	50		,	*			,	TRUE		,	"Needs description" ,	FALSE
+NOOFUNITS     	,	INTEGER		,	*		,	*			,	FALSE		,	NULL                ,	FALSE
+HASLAB			,	BOOL		,	*		,	*			,	TRUE		,	FALSE               ,	FALSE
+SEMOFFERED		,	ENUM		,	*		,	SEMESTER	,	TRUE		,	NULL                ,	FALSE

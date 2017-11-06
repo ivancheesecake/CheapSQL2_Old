@@ -1,0 +1,7 @@
+#Column name	,	Data type	,	length	,	Mask						,	IsNullable	,	Default Value	,	IsUnique
+#												[0-9]{4}-[0-9]{2}-[0-9]{2}
+STUDNO			,	STRING		,	10		,	"[0-9]{4}-[0-9]{5}"			,	FALSE		,	NULL			,	FALSE
+DESCRIPTION		,	STRING		,	50		,	*                           ,	FALSE		,	NULL			,	FALSE
+ACTION			,	STRING		,	50		,	*                           ,	TRUE		,	NULL			,	FALSE
+DATEFILED		,	DATE		,	10		,	"YYYY-MM-DD"  				,	FALSE		,	NULL			,	FALSE
+DATERESOLVED	,	DATE		,	10		,	"YYYY-MM-DD"  				,	FALSE		,	NULL			,	FALSE
